@@ -1,0 +1,808 @@
+===== 670
+Updated task #17 status
+>>> 671 {"url": "https://stockanalysis.com/stocks/aapl/financials/", "prompt": "Reproduce the ANNUAL income statement table exactly as a markdown table: all rows and all fiscal-year columns shown (including TTM column if present), with numbers exactly as printed and the units line. Do not summarize."}
+>>> 672 {"url": "https://stockanalysis.com/stocks/aapl/financials/balance-sheet/", "prompt": "Reproduce the ANNUAL balance sheet table exactly as a markdown table: all rows and all fiscal-year columns shown, numbers exactly as printed, plus the units line. Do not summarize."}
+>>> 673 {"url": "https://stockanalysis.com/stocks/aapl/financials/cash-flow-statement/", "prompt": "Reproduce the ANNUAL cash flow statement table exactly as a markdown table: all rows and all fiscal-year columns shown, numbers exactly as printed, plus the units line. Do not summarize."}
+>>> 674 {"url": "https://stockanalysis.com/stocks/aapl/history/", "prompt": "Reproduce the price history table: the first 15 rows and the last 5 rows exactly as printed (Date, Open, High, Low, Close, Adj Close, Change, Volume). Also state how many rows/days the page covers and its latest date."}
+===== 678
+**Apple Financials Overview: Annual Income Statement Summary (Revenue & Profits)**
+
+Financials in millions USD. Fiscal year is October - September.
+
+| Fiscal Year | TTM | FY 2025 | FY 2024 | FY 2023 | FY 2022 | FY 2021 |
+|---|---|---|---|---|---|---|
+| Period Ending | Jun '26 Jun 27, 2026 | Sep '25 Sep 27, 2025 | Sep '24 Sep 28, 2024 | Sep '23 Sep 30, 2023 | Sep '22 Sep 24, 2022 | Sep '21 Sep 25, 2021 |
+| Revenue | 466,823 | 416,161 | 391,035 | 383,285 | 394,328 | 365,817 |
+| Revenue Growth | 14.24% | 6.43% | 2.02% | -2.80% | 7.79% | 33.26% |
+| Gross Profit | 227,123 | 195,201 | 180,683 | 169,148 | 170,782 | 152,836 |
+| Operating Income | 154,859 | 133,050 | 123,216 | 114,301 | 119,437 | 108,949 |
+| Net Income | 128,930 | 112,010 | 93,736 | 96,995 | 99,803 | 94,680 |
+| Earnings Per Share | 8.72 | 7.46 | 6.08 | 6.13 | 6.11 | 5.61 |
+| EPS Growth | 32.61% | 22.70% | -0.82% | 0.33% | 8.91% | 71.04% |
+
+Note: This is the annual summary table from the page's Overview section. The page's labels for Gross Profit, Operating Income, and Net Income growth appear without values, so they are omitted. The content provided does not include the full Income Statement page.
+===== 679
+**First 15 rows**
+
+| Date | Open | High | Low | Close | Adj Close | Change | Volume |
+|---|---|---|---|---|---|---|---|
+| Oct 9, 2026 | 331.70 | 338.61 | 330.70 | 336.64 | 336.64 | -1.11% | 37,860,541 |
+| Oct 8, 2026 | 336.82 | 341.57 | 335.90 | 340.42 | 340.42 | 1.11% | 35,309,965 |
+| Oct 7, 2026 | 336.96 | 338.67 | 332.78 | 336.67 | 336.67 | 0.91% | 34,147,860 |
+| Oct 6, 2026 | 332.28 | 334.38 | 330.62 | 333.63 | 333.63 | 0.22% | 30,449,005 |
+| Oct 5, 2026 | 332.82 | 336.21 | 331.65 | 332.89 | 332.89 | -0.24% | 34,400,850 |
+| Oct 2, 2026 | 333.26 | 334.54 | 330.61 | 333.69 | 333.69 | 1.02% | 33,278,552 |
+| Oct 1, 2026 | 330.00 | 332.48 | 325.81 | 330.32 | 330.32 | -0.81% | 36,306,346 |
+| Sep 30, 2026 | 330.80 | 339.50 | 330.14 | 333.02 | 333.02 | 1.10% | 49,988,558 |
+| Sep 29, 2026 | 336.97 | 337.09 | 328.70 | 329.40 | 329.40 | -2.66% | 38,478,037 |
+| Sep 28, 2026 | 340.37 | 342.99 | 338.04 | 338.40 | 338.40 | -0.78% | 32,820,848 |
+| Sep 25, 2026 | 336.04 | 341.67 | 334.53 | 341.07 | 341.07 | 1.53% | 30,002,507 |
+| Sep 24, 2026 | 336.72 | 338.91 | 334.30 | 335.92 | 335.92 | -0.33% | 24,733,098 |
+| Sep 23, 2026 | 341.08 | 341.80 | 335.50 | 337.02 | 337.02 | -0.80% | 31,658,823 |
+| Sep 22, 2026 | 340.14 | 345.34 | 338.75 | 339.75 | 339.75 | 0.23% | 40,711,786 |
+| Sep 21, 2026 | 335.28 | 339.64 | 333.05 | 338.98 | 338.98 | 0.85% | 34,999,229 |
+
+**Last 5 rows**
+
+| Date | Open | High | Low | Close | Adj Close | Change | Volume |
+|---|---|---|---|---|---|---|---|
+| Aug 6, 2026 | 314.34 | 316.29 | 309.23 | 312.41 | 312.14 | 0.45% | 46,139,901 |
+| Aug 5, 2026 | 309.36 | 311.71 | 305.67 | 311.00 | 310.73 | 0.52% | 49,438,763 |
+| Aug 4, 2026 | 302.73 | 310.42 | 301.32 | 309.38 | 309.11 | 1.96% | 68,000,969 |
+| Aug 3, 2026 | 309.58 | 311.80 | 302.56 | 303.42 | 303.16 | -1.78% | 75,051,951 |
+| Jul 31, 2026 | 304.81 | 310.69 | 300.00 | 308.91 | 308.64 | -7.35% | 132,489,137 |
+
+**Coverage:** The table on this page shows 50 daily rows, from Jul 31, 2026 to Oct 9, 2026. The pagination reads "Page 1 of 3," so the full history spans more rows than this page displays. The latest date is **Oct 9, 2026**.
+===== 680
+Financials in millions USD. Fiscal year is October - September.
+
+| Fiscal Year | FY 2025 | FY 2024 | FY 2023 | FY 2022 | FY 2021 |
+|---|---|---|---|---|---|
+| Period Ending | Sep '25 Sep 27, 2025 | Sep '24 Sep 28, 2024 | Sep '23 Sep 30, 2023 | Sep '22 Sep 24, 2022 | Sep '21 Sep 25, 2021 |
+| **Operating Activities** | | | | | |
+| Net Income | 112,010 | 93,736 | 96,995 | 99,803 | 94,680 |
+| Depreciation & Amortization | 11,698 | 11,445 | 11,519 | 11,104 | 11,284 |
+| Stock-Based Compensation | 12,863 | 11,688 | 10,833 | 9,038 | 7,906 |
+| Other Operating Activities | -89 | -2,266 | -2,227 | 1,006 | -4,921 |
+| Change in Accounts Receivable | -6,682 | -3,788 | -1,688 | -1,823 | -10,125 |
+| Change in Inventory | 1,400 | -1,046 | -1,618 | 1,484 | -2,642 |
+| Change in Accounts Payable | 902 | 6,020 | -1,889 | 9,448 | 12,326 |
+| Change in Other Net Operating Assets | -20,620 | 2,465 | -1,382 | -7,909 | -4,470 |
+| Operating Cash Flow | 111,482 | 118,254 | 110,543 | 122,151 | 104,038 |
+| Operating Cash Flow Growth | -5.73% | 6.98% | -9.50% | 17.41% | 28.96% |
+| **Investing Activities** | | | | | |
+| Capital Expenditures | -12,715 | -9,447 | -10,959 | -10,708 | -11,085 |
+| Investment in Securities | 29,390 | 13,690 | 16,001 | -9,560 | -3,075 |
+| Other Investing Activities | -1,480 | -1,308 | -1,337 | -2,086 | -385 |
+| Investing Cash Flow | 15,195 | 2,935 | 3,705 | -22,354 | -14,545 |
+| **Financing Activities** | | | | | |
+| Short-Term Debt Issued | - | 3,960 | - | 3,955 | 1,022 |
+| Long-Term Debt Issued | 4,481 | - | 5,228 | 5,465 | 20,393 |
+| Total Debt Issued | 4,481 | 3,960 | 5,228 | 9,420 | 21,415 |
+| Short-Term Debt Repaid | -2,032 | - | -3,978 | - | - |
+| Long-Term Debt Repaid | -10,932 | -9,958 | -11,151 | -9,543 | -8,750 |
+| Total Debt Repaid | -12,964 | -9,958 | -15,129 | -9,543 | -8,750 |
+| Net Debt Issued (Repaid) | -8,483 | -5,998 | -9,901 | -123 | 12,665 |
+| Repurchase of Common Stock | -96,671 | -100,390 | -82,981 | -95,625 | -92,527 |
+| Common Dividends Paid | -15,421 | -15,234 | -15,025 | -14,841 | -14,467 |
+| Other Financing Activities | -111 | -361 | -581 | -160 | 976 |
+| Financing Cash Flow | -120,686 | -121,983 | -108,488 | -110,749 | -93,353 |
+| **Net Cash Flow** | | | | | |
+| Net Cash Flow | 5,991 | -794 | 5,760 | -10,952 | -3,860 |
+| **Free Cash Flow** | | | | | |
+| Free Cash Flow | 98,767 | 108,807 | 99,584 | 111,443 | 92,953 |
+| Free Cash Flow Growth | -9.23% | 9.26% | -10.64% | 19.89% | 26.70% |
+| Free Cash Flow Margin | 23.73% | 27.82% | 25.98% | 28.26% | 25.41% |
+| Free Cash Flow Per Share | 6.58 | 7.06 | 6.30 | 6.83 | 5.51 |
+| Levered Free Cash Flow | 78,862 | 110,846 | 84,638 | 92,047 | 73,295 |
+| Unlevered Free Cash Flow | 78,862 | 110,846 | 84,638 | 92,047 | 74,948 |
+| **Additional Metrics** | | | | | |
+| Cash Interest Paid | - | - | - | - | 2,687 |
+| Cash Income Tax Paid | 43,369 | 26,102 | 18,679 | 19,573 | 25,385 |
+| Change in Working Capital | -25,000 | 3,651 | -6,577 | 1,200 | -4,911 |
+
+The TTM column is omitted because it is not a fiscal year. Its figures are available on the source page.
+===== 681
+**Apple Balance Sheet (Annual)**
+
+Financials in millions USD. Fiscal year is October - September.
+
+The TTM column is omitted because it is not a fiscal year.
+
+### Assets
+
+| Fiscal Year | FY 2025 | FY 2024 | FY 2023 | FY 2022 | FY 2021 |
+|---|---|---|---|---|---|
+| Period Ending | Sep '25 Sep 27, 2025 | Sep '24 Sep 28, 2024 | Sep '23 Sep 30, 2023 | Sep '22 Sep 24, 2022 | Sep '21 Sep 25, 2021 |
+| Cash & Equivalents | 35,934 | 29,943 | 29,965 | 23,646 | 34,940 |
+| Short-Term Investments | 18,763 | 35,228 | 31,590 | 24,658 | 27,699 |
+| Cash & Short-Term Investments | 54,697 | 65,171 | 61,555 | 48,304 | 62,639 |
+| Cash Growth | -16.07% | 5.87% | 27.43% | -22.88% | -31.12% |
+| Accounts Receivable | 39,777 | 33,410 | 29,508 | 28,184 | 26,278 |
+| Other Receivables | 33,180 | 32,833 | 31,477 | 32,748 | 25,228 |
+| Receivables | 72,957 | 66,243 | 60,985 | 60,932 | 51,506 |
+| Inventory | 5,718 | 7,286 | 6,331 | 4,946 | 6,580 |
+| Other Current Assets | 14,585 | 14,287 | 14,695 | 21,223 | 14,111 |
+| Total Current Assets | 147,957 | 152,987 | 143,566 | 135,405 | 134,836 |
+| Property, Plant & Equipment | 49,834 | 45,680 | 43,715 | 52,534 | 49,527 |
+| Long-Term Investments | 77,723 | 91,479 | 100,544 | 120,805 | 127,877 |
+| Other Intangible Assets | - | - | - | - | - |
+| Long-Term Deferred Tax Assets | 20,777 | 19,499 | 17,852 | - | - |
+| Other Long-Term Assets | 62,950 | 55,335 | 46,906 | 44,011 | 38,762 |
+| Total Assets | 359,241 | 364,980 | 352,583 | 352,755 | 351,002 |
+
+### Liabilities
+
+| Fiscal Year | FY 2025 | FY 2024 | FY 2023 | FY 2022 | FY 2021 |
+|---|---|---|---|---|---|
+| Period Ending | Sep '25 Sep 27, 2025 | Sep '24 Sep 28, 2024 | Sep '23 Sep 30, 2023 | Sep '22 Sep 24, 2022 | Sep '21 Sep 25, 2021 |
+| Accounts Payable | 69,860 | 68,960 | 62,611 | 64,115 | 54,763 |
+| Accrued Expenses | 8,919 | 7,679 | - | - | - |
+| Short-Term Debt | 7,979 | 9,967 | 5,985 | 9,982 | 6,000 |
+| Current Portion of Long-Term Debt | 12,350 | 10,912 | 9,822 | 11,128 | 9,613 |
+| Current Portion of Leases | 2,117 | 1,632 | 1,575 | 1,663 | 1,528 |
+| Current Income Taxes Payable | 13,016 | 26,601 | 8,819 | - | - |
+| Current Unearned Revenue | 9,055 | 8,249 | 8,061 | 7,912 | 7,612 |
+| Other Current Liabilities | 42,335 | 42,392 | 48,435 | 59,182 | 45,965 |
+| Total Current Liabilities | 165,631 | 176,392 | 145,308 | 153,982 | 125,481 |
+| Long-Term Debt | 78,328 | 85,750 | 95,281 | 98,959 | 109,106 |
+| Long-Term Leases | 11,603 | 10,798 | 11,267 | 10,748 | 10,275 |
+| Other Long-Term Liabilities | 29,946 | 35,090 | 38,581 | 38,394 | 43,050 |
+| Total Liabilities | 285,508 | 308,030 | 290,437 | 302,083 | 287,912 |
+
+### Shareholders' Equity
+
+| Fiscal Year | FY 2025 | FY 2024 | FY 2023 | FY 2022 | FY 2021 |
+|---|---|---|---|---|---|
+| Period Ending | Sep '25 Sep 27, 2025 | Sep '24 Sep 28, 2024 | Sep '23 Sep 30, 2023 | Sep '22 Sep 24, 2022 | Sep '21 Sep 25, 2021 |
+| Common Stock | 93,568 | 83,276 | 73,812 | 64,849 | 57,365 |
+| Retained Earnings | -14,264 | -19,154 | -214 | -3,068 | 5,562 |
+| Comprehensive Income & Other | -5,571 | -7,172 | -11,452 | -11,109 | 163 |
+| Shareholders' Equity | 73,733 | 56,950 | 62,146 | 50,672 | 63,090 |
+| Total Liabilities & Equity | 359,241 | 364,980 | 352,583 | 352,755 | 351,002 |
+
+### Additional Metrics
+
+| Fiscal Year | FY 2025 | FY 2024 | FY 2023 | FY 2022 | FY 2021 |
+|---|---|---|---|---|---|
+| Period Ending | Sep '25 Sep 27, 2025 | Sep '24 Sep 28, 2024 | Sep '23 Sep 30, 2023 | Sep '22 Sep 24, 2022 | Sep '21 Sep 25, 2021 |
+| Total Debt | 112,377 | 119,059 | 123,930 | 132,480 | 136,522 |
+| Net Cash (Debt) | 20,043 | 37,591 | 38,169 | 36,629 | 53,994 |
+| Net Cash Growth | -46.68% | -1.51% | 4.20% | -32.16% | -22.37% |
+| Net Cash Per Share | 1.34 | 2.44 | 2.41 | 2.24 | 3.20 |
+| Filing Date Shares Outstanding | 14,776 | 15,116 | 15,553 | 15,908 | 16,406 |
+| Total Common Shares Outstanding | 14,773 | 15,117 | 15,550 | 15,943 | 16,427 |
+| Working Capital | -17,674 | -23,405 | -1,742 | -18,577 | 9,355 |
+| Book Value Per Share | 4.99 | 3.77 | 4.00 | 3.18 | 3.84 |
+| Tangible Book Value | 73,733 | 56,950 | 62,146 | 50,672 | 63,090 |
+| Tangible Book Value Per Share | 4.99 | 3.77 | 4.00 | 3.18 | 3.84 |
+| Land | 27,337 | 24,690 | 23,446 | 22,126 | 20,041 |
+| Machinery | 83,420 | 80,205 | 78,314 | 81,060 | 78,659 |
+| Leasehold Improvements | 15,091 | 14,233 | 12,839 | 11,271 | 11,023 |
+>>> 684 {"url": "https://stockanalysis.com/stocks/aapl/history/?period=monthly", "prompt": "Reproduce the price history table rows exactly (Date, Open, High, Low, Close, Adj Close, Change, Volume) for ALL rows shown on this page. If the page shows monthly rows, list every month. State the period/granularity
+>>> 685 {"url": "https://stockanalysis.com/stocks/aapl/statistics/", "prompt": "Reproduce ALL statistics shown, as 'Label: value' lines, exactly as printed: market cap, enterprise value, P/E, forward P/E, PEG, P/S, P/B, P/FCF, EV/EBITDA, EV/EBIT, EV/FCF, debt/equity, net cash, current ratio, Altman Z-Score,
+>>> 686 {"url": "https://stockanalysis.com/stocks/nke/financials/", "prompt": "Reproduce the ANNUAL income statement overview table exactly as a markdown table: all rows and all fiscal-year columns shown (including TTM column), numbers exactly as printed, plus units and fiscal-year-end note. Do not summariz
+>>> 687 {"url": "https://stockanalysis.com/stocks/nke/financials/balance-sheet/", "prompt": "Reproduce the ANNUAL balance sheet table exactly as markdown tables: all rows and all fiscal-year columns shown, numbers exactly as printed, plus units line. Do not summarize."}
+>>> 688 {"url": "https://stockanalysis.com/stocks/nke/financials/cash-flow-statement/", "prompt": "Reproduce the ANNUAL cash flow statement table exactly as a markdown table: all rows and all fiscal-year columns shown, numbers exactly as printed, plus units line. Do not summarize."}
+>>> 689 {"url": "https://stockanalysis.com/stocks/nke/statistics/", "prompt": "Reproduce ALL statistics shown, as 'Label: value' lines, exactly as printed: market cap, enterprise value, P/E, forward P/E, PEG, P/S, P/B, P/FCF, EV/EBITDA, EV/EBIT, EV/FCF, debt/equity, net cash, current ratio, Altman Z-Score, 
+>>> 690 {"url": "https://stockanalysis.com/stocks/nke/history/?period=monthly", "prompt": "Reproduce the price history table rows exactly (Date, Open, High, Low, Close, Adj Close, Change, Volume) for ALL rows shown on this page. State the granularity and the first and last dates."}
+>>> 691 {"url": "https://stockanalysis.com/etf/spy/history/?period=monthly", "prompt": "Reproduce the price history table rows exactly (Date, Open, High, Low, Close, Adj Close, Change, Volume) for ALL rows shown on this page. State the granularity and the first and last dates."}
+===== 695
+**NIKE, Inc. (NKE): Annual Income Statement Overview**
+
+Financials in millions USD, except EPS (USD per share) and growth rates (%). Fiscal year is June to May.
+
+| Fiscal Year | TTM | FY 2026 | FY 2025 | FY 2024 | FY 2023 | FY 2022 |
+|---|---|---|---|---|---|---|
+| Period Ending | Aug '26 Aug 31, 2026 | May '26 May 31, 2026 | May '25 May 31, 2025 | May '24 May 31, 2024 | May '23 May 31, 2023 | May '22 May 31, 2022 |
+| Revenue / Revenue Growth | 45,891 | 46,398 | 46,309 | 51,362 | 51,217 | 46,710 |
+| Revenue Growth | -1.18% | 0.19% | -9.84% | 0.28% | 9.65% | 4.88% |
+| Gross Profit / Gross Profit Growth | 19,920 | 20,065 | 19,790 | 22,951 | 22,292 | 21,479 |
+| Operating Income / Operating Income Growth | 4,143 | 4,182 | 3,702 | 6,754 | 5,915 | 6,675 |
+| Net Income / Net Income Growth | 3,093 | 3,108 | 3,219 | 5,700 | 5,070 | 6,046 |
+| Earnings Per Share / EPS Growth | 2.09 | 2.10 | 2.16 | 3.73 | 3.23 | 3.75 |
+| EPS Growth | 7.17% | -2.78% | -42.09% | 15.48% | -13.87% | 5.34% |
+
+**Notes:**
+- Units: millions USD for revenue, gross profit, operating income, and net income. EPS is in USD per share.
+- Fiscal year end: May 31 (fiscal year runs June to May). The TTM column covers the period ending Aug 31, 2026.
+- Some row labels on the source page combine a metric with its growth rate. The table above keeps that structure.
+===== 696
+Market Cap: 4.91T
+Enterprise Value: 4.85T
+PE Ratio: 39.05
+Forward PE: 36.96
+PEG Ratio: 3.33
+PS Ratio: 10.48
+Forward PS: 9.50
+PB Ratio: 46.25
+P/TBV Ratio: 56.12
+P/FCF Ratio: 35.80
+P/OCF Ratio: 33.35
+EV/Earnings: 37.47
+EV/Sales: 10.35
+EV/EBITDA: 28.76
+EV/EBIT: 31.19
+EV/FCF: 35.34
+Current Ratio: 1.00
+Quick Ratio: 0.81
+Debt/Equity: 0.78
+Debt/EBITDA: 0.45
+Debt/FCF: 0.62
+Interest Coverage: n/a
+Net Cash: 62.17B
+Net Cash Per Share: $4.26
+Total Debt: 84.34B
+Cash & Marketable Securities: 146.52B
+Altman Z-Score: 10.93
+Piotroski F-Score: 8
+Return on Equity (ROE): 148.75%
+Return on Assets (ROA): 27.08%
+Return on Invested Capital (ROIC): 101.57%
+Return on Capital Employed (ROCE): 66.20%
+WACC: 9.96%
+Gross Margin: 48.65%
+Operating Margin: 33.17%
+Pretax Margin: 33.40%
+Profit Margin: 27.62%
+EBITDA Margin: 35.98%
+EBIT Margin: 33.17%
+FCF Margin: 29.28%
+Revenue (TTM): 466.82B
+Gross Profit (TTM): 227.12B
+Operating Income (TTM): 154.86B
+Pretax Income (TTM): 155.91B
+Net Income (TTM): 128.93B
+EBITDA (TTM): 167.96B
+EBIT (TTM): 154.86B
+Free Cash Flow (TTM): 136.68B
+Operating Cash Flow (TTM): 146.72B
+Capital Expenditures (TTM): -10.04B
+Earnings Per Share (TTM): $8.72
+FCF Per Share: $9.37
+Beta (5Y): 1.07
+52-Week Price Change: +30.45%
+52-Week High: not shown on page
+52-Week Low: not shown on page
+50-Day Moving Average: 322.39
+200-Day Moving Average: 290.74
+Relative Strength Index (RSI): 56.17
+Shares Outstanding: 14.59B
+Shares Change (YoY): -2.13%
+Dividend Per Share: $1.08
+Dividend Yield: 0.32%
+Payout Ratio: 12.39%
+Buyback Yield: 2.13%
+Shareholder Yield: 2.45%
+Analyst Consensus: Buy
+Analyst Count: 44
+Average Price Target: $328.09
+Price Target Difference: -2.54%
+Revenue Growth Forecast (3Y): 11.14%
+EPS Growth Forecast (3Y): 13.21%
+Next Earnings Date: Nov 2, 2026 (after market close)
+===== 697
+**Granularity:** Daily (trading days). **Period shown:** Jul 30, 2026 (first date) to Oct 8, 2026 (last date). This is page 1 of 3, showing 50 rows.
+
+| Date | Open | High | Low | Close | Adj. Close | Change | Volume |
+|---|---|---|---|---|---|---|---|
+| Oct 8, 2026 | 336.82 | 341.57 | 335.90 | 340.42 | 340.42 | 1.11% | 35,323,987 |
+| Oct 7, 2026 | 336.96 | 338.67 | 332.78 | 336.67 | 336.67 | 0.91% | 34,147,860 |
+| Oct 6, 2026 | 332.28 | 334.38 | 330.62 | 333.63 | 333.63 | 0.22% | 30,449,005 |
+| Oct 5, 2026 | 332.82 | 336.21 | 331.65 | 332.89 | 332.89 | -0.24% | 34,400,850 |
+| Oct 2, 2026 | 333.26 | 334.54 | 330.61 | 333.69 | 333.69 | 1.02% | 33,278,552 |
+| Oct 1, 2026 | 330.00 | 332.48 | 325.81 | 330.32 | 330.32 | -0.81% | 36,306,346 |
+| Sep 30, 2026 | 330.80 | 339.50 | 330.14 | 333.02 | 333.02 | 1.10% | 49,988,558 |
+| Sep 29, 2026 | 336.97 | 337.09 | 328.70 | 329.40 | 329.40 | -2.66% | 38,478,037 |
+| Sep 28, 2026 | 340.37 | 342.99 | 338.04 | 338.40 | 338.40 | -0.78% | 32,820,848 |
+| Sep 25, 2026 | 336.04 | 341.67 | 334.53 | 341.07 | 341.07 | 1.53% | 30,002,507 |
+| Sep 24, 2026 | 336.72 | 338.91 | 334.30 | 335.92 | 335.92 | -0.33% | 24,733,098 |
+| Sep 23, 2026 | 341.08 | 341.80 | 335.50 | 337.02 | 337.02 | -0.80% | 31,658,823 |
+| Sep 22, 2026 | 340.14 | 345.34 | 338.75 | 339.75 | 339.75 | 0.23% | 40,711,786 |
+| Sep 21, 2026 | 335.28 | 339.64 | 333.05 | 338.98 | 338.98 | 0.85% | 34,999,229 |
+| Sep 18, 2026 | 337.91 | 338.49 | 332.53 | 336.13 | 336.13 | -0.26% | 86,588,203 |
+| Sep 17, 2026 | 334.77 | 338.34 | 330.18 | 337.00 | 337.00 | 1.38% | 36,700,225 |
+| Sep 16, 2026 | 332.53 | 335.48 | 330.70 | 332.41 | 332.41 | 0.32% | 35,981,000 |
+| Sep 15, 2026 | 330.14 | 331.78 | 328.35 | 331.34 | 331.34 | -0.52% | 31,748,183 |
+| Sep 14, 2026 | 334.79 | 335.50 | 331.34 | 333.08 | 333.08 | 0.24% | 39,269,147 |
+| Sep 11, 2026 | 327.45 | 336.22 | 326.30 | 332.27 | 332.27 | 1.75% | 50,716,865 |
+| Sep 10, 2026 | 316.67 | 326.74 | 316.51 | 326.57 | 326.57 | 3.56% | 70,011,913 |
+| Sep 9, 2026 | 315.49 | 319.15 | 309.90 | 315.34 | 315.34 | -0.28% | 65,639,962 |
+| Sep 8, 2026 | 317.10 | 320.70 | 314.90 | 316.22 | 316.22 | -1.17% | 35,477,090 |
+| Sep 4, 2026 | 328.31 | 328.93 | 317.86 | 319.97 | 319.97 | -2.51% | 39,606,884 |
+| Sep 3, 2026 | 324.87 | 330.81 | 324.11 | 328.21 | 328.21 | 1.00% | 37,225,838 |
+| Sep 2, 2026 | 326.87 | 328.40 | 323.53 | 324.96 | 324.96 | -0.05% | 33,776,370 |
+| Sep 1, 2026 | 316.98 | 327.30 | 314.73 | 325.13 | 325.13 | 2.61% | 53,167,388 |
+| Aug 31, 2026 | 319.60 | 321.24 | 312.80 | 316.85 | 316.85 | -0.89% | 41,242,724 |
+| Aug 28, 2026 | 316.85 | 322.37 | 315.45 | 319.70 | 319.70 | 1.63% | 38,649,398 |
+| Aug 27, 2026 | 310.55 | 315.40 | 309.40 | 314.58 | 314.58 | 0.36% | 32,419,233 |
+| Aug 26, 2026 | 310.30 | 315.43 | 308.80 | 313.45 | 313.45 | 1.15% | 34,024,486 |
+| Aug 25, 2026 | 310.79 | 313.59 | 308.21 | 309.90 | 309.90 | -0.14% | 25,869,807 |
+| Aug 24, 2026 | 311.47 | 313.36 | 309.97 | 310.34 | 310.34 | 0.32% | 34,673,582 |
+| Aug 21, 2026 | 312.05 | 312.38 | 307.01 | 309.35 | 309.35 | -0.63% | 46,876,815 |
+| Aug 20, 2026 | 317.46 | 320.28 | 310.65 | 311.30 | 311.30 | -1.75% | 40,959,184 |
+| Aug 19, 2026 | 310.14 | 319.28 | 309.60 | 316.83 | 316.83 | 2.19% | 50,505,646 |
+| Aug 18, 2026 | 307.58 | 311.49 | 305.74 | 310.03 | 310.03 | 1.45% | 53,424,535 |
+| Aug 17, 2026 | 306.21 | 307.66 | 302.94 | 305.59 | 305.59 | -0.11% | 38,169,263 |
+| Aug 14, 2026 | 306.00 | 307.49 | 304.30 | 305.93 | 305.93 | 0.22% | 28,229,375 |
+| Aug 13, 2026 | 304.21 | 306.00 | 302.05 | 305.26 | 305.26 | 1.00% | 40,349,289 |
+| Aug 12, 2026 | 305.10 | 305.66 | 300.57 | 302.25 | 302.25 | -0.87% | 41,657,768 |
+| Aug 11, 2026 | 307.75 | 309.97 | 302.79 | 304.91 | 304.91 | -1.09% | 37,476,746 |
+| Aug 10, 2026 | 306.83 | 308.26 | 304.61 | 308.26 | 308.26 | -1.53% | 44,812,503 |
+| Aug 7, 2026 | 311.45 | 314.81 | 310.74 | 313.33 | 313.06 | 0.29% | 34,437,191 |
+| Aug 6, 2026 | 314.34 | 316.29 | 309.23 | 312.41 | 312.14 | 0.45% | 46,139,901 |
+| Aug 5, 2026 | 309.36 | 311.71 | 305.67 | 311.00 | 310.73 | 0.52% | 49,438,763 |
+| Aug 4, 2026 | 302.73 | 310.42 | 301.32 | 309.38 | 309.11 | 1.96% | 68,000,969 |
+| Aug 3, 2026 | 309.58 | 311.80 | 302.56 | 303.42 | 303.16 | -1.78% | 75,051,951 |
+| Jul 31, 2026 | 304.81 | 310.69 | 300.00 | 308.91 | 308.64 | -7.35% | 132,489,137 |
+| Jul 30, 2026 | 333.10 | 334.75 | 329.59 | 333.43 | 333.14 | -1.41% | 74,817,792 |
+===== 698
+**Valuation**
+Market Cap: 51.56B
+Enterprise Value: 54.31B
+PE Ratio: 16.64
+Forward PE: 25.71
+PEG Ratio: 9.20
+PS Ratio: 1.12
+Forward PS: 1.21
+PB Ratio: 3.38
+P/TBV Ratio: 3.51
+P/FCF Ratio: 24.51
+P/OCF Ratio: 18.55
+EV/Earnings: 17.57
+EV/Sales: 1.18
+EV/EBITDA: 11.11
+EV/EBIT: 13.12
+EV/FCF: 25.82
+
+**Financial Position**
+Current Ratio: 2.07
+Quick Ratio: 1.19
+Debt / Equity: 0.73
+Debt / EBITDA: 1.84
+Debt / FCF: 5.29
+Interest Coverage: 18.83
+Net Cash: -2.76B
+Net Cash Per Share: -$1.86
+Cash & Cash Equivalents: 8.37B
+Total Debt: 11.13B
+Equity (Book Value): 15.22B
+Book Value Per Share: 10.26
+Working Capital: 12.26B
+
+**Financial Efficiency**
+Return on Equity (ROE): 21.56%
+Return on Assets (ROA): 6.89%
+Return on Invested Capital (ROIC): 18.86%
+Return on Capital Employed (ROCE): 15.70%
+WACC: 8.75%
+Revenue Per Employee: $628,644
+Profits Per Employee: $42,370
+Employee Count: 73,000
+Asset Turnover: 1.22
+Inventory Turnover: 3.25
+
+**Income Statement (TTM)**
+Revenue: 45.89B
+Gross Profit: 19.92B
+Operating Income: 4.14B
+Pretax Income: 3.90B
+Net Income: 3.09B
+EBITDA: 4.89B
+EBIT: 4.14B
+EPS: $2.09
+Income Tax: 806.00M
+Effective Tax Rate: 20.67%
+
+**Cash Flow (TTM)**
+Operating Cash Flow: 2.78B
+Capital Expenditures: -676.00M
+Depreciation & Amortization: 750.00M
+Net Borrowing: n/a
+Free Cash Flow: 2.11B
+FCF Per Share: $1.42
+
+**Margins**
+Gross Margin: 43.41%
+Operating Margin: 9.03%
+Pretax Margin: 8.50%
+Profit Margin: 6.74%
+EBITDA Margin: 10.66%
+EBIT Margin: 9.03%
+FCF Margin: 4.59%
+
+**Stock Price Statistics**
+Beta (5Y): 1.10
+52-Week Price Change: -49.76%
+52-Week High: n/a
+52-Week Low: n/a
+50-Day Moving Average: 38.15
+200-Day Moving Average: 48.01
+Relative Strength Index (RSI): 37.75
+Average Volume (20 Days): 45,359,328
+Last Close (Oct 9, 2026): 34.71
+
+**Share Statistics**
+Shares Outstanding: 1.49B
+Current Share Class: 1.20B
+Float: 1.18B
+Shares Change (YoY): +0.03%
+Shares Change (QoQ): +0.09%
+Owned by Insiders: 20.10%
+Owned by Institutions: 65.98%
+
+**Short Selling**
+Short Interest: 85.70M
+Short Previous Month: 68.83M
+Short % of Shares Out: 5.77%
+Short % of Float: 7.27%
+Short Ratio (days to cover): 2.93
+
+**Dividends & Yields**
+Dividend Per Share: $1.64
+Dividend Yield: 4.73%
+Dividend Growth (YoY): 2.50%
+Years of Dividend Growth: 24
+Payout Ratio: 78.56%
+FCF Payout Ratio: 115.72%
+Buyback Yield: -0.03%
+Shareholder Yield: 4.69%
+Earnings Yield: 5.99%
+FCF Yield: 4.08%
+
+**Analyst Forecast**
+Price Target: $38.04
+Price Target Difference: 9.59%
+Analyst Consensus: Hold
+Analyst Count: 42
+Revenue Growth Forecast (3Y): -0.79%
+EPS Growth Forecast (3Y): 11.92%
+
+**Fair Value**
+Lynch Fair Value: Upgrade (locked, no value shown)
+Lynch Upside: Upgrade (locked, no value shown)
+Graham Number: Upgrade (locked, no value shown)
+Graham Upside: Upgrade (locked, no value shown)
+
+**Scores**
+Altman Z-Score: 4.14
+Piotroski F-Score: 5
+
+**Important Dates**
+Last Earnings Date: Oct 1, 2026 (after market close)
+Next Earnings Date: not shown on the page
+Ex-Dividend Date: Sep 1, 2026
+===== 699
+**Nike (NKE) Annual Cash Flow Statement**
+
+Financials in millions USD. Fiscal year is June - May. The TTM column is omitted because it is not an annual period.
+
+| Item | FY 2026 | FY 2025 | FY 2024 | FY 2023 | FY 2022 |
+|---|---|---|---|---|---|
+| **Period Ending** | May 31, 2026 | May 31, 2025 | May 31, 2024 | May 31, 2023 | May 31, 2022 |
+| **Operating Activities** | | | | | |
+| Net Income | 3,108 | 3,219 | 5,700 | 5,070 | 6,046 |
+| Depreciation & Amortization | 747 | 775 | 796 | 703 | 840 |
+| Asset Writedown & Restructuring Costs | 50 | 33 | 48 | 156 | - |
+| Stock-Based Compensation | 715 | 709 | 804 | 755 | 638 |
+| Other Operating Activities | -74 | -251 | -635 | -330 | -676 |
+| Change in Accounts Receivable | -1,207 | -257 | -329 | 489 | -504 |
+| Change in Inventory | -31 | 120 | 908 | -133 | -1,676 |
+| Change in Accounts Payable | -959 | -426 | 397 | -225 | 1,365 |
+| Change in Other Net Operating Assets | 519 | -224 | -260 | -644 | -845 |
+| Operating Cash Flow | 2,868 | 3,698 | 7,429 | 5,841 | 5,188 |
+| Operating Cash Flow Growth | -22.45% | -50.22% | 27.19% | 12.59% | -22.07% |
+| **Investing Activities** | | | | | |
+| Capital Expenditures | -684 | -430 | -812 | -969 | -758 |
+| Investment in Securities | 261 | 147 | 1,721 | 1,481 | -747 |
+| Other Investing Activities | -65 | 8 | -15 | 52 | -19 |
+| Investing Cash Flow | -488 | -275 | 894 | 564 | -1,524 |
+| **Financing Activities** | | | | | |
+| Short-Term Debt Issued | - | - | - | - | 15 |
+| Total Debt Issued | - | - | - | - | 15 |
+| Short-Term Debt Repaid | - | - | - | -4 | - |
+| Long-Term Debt Repaid | - | -1,000 | - | -500 | - |
+| Total Debt Repaid | - | -1,000 | - | -504 | - |
+| Net Debt Issued (Repaid) | - | -1,000 | - | -504 | 15 |
+| Issuance of Common Stock | 354 | 551 | 667 | 651 | 1,151 |
+| Repurchase of Common Stock | -146 | -2,985 | -4,250 | -5,480 | -4,014 |
+| Common Dividends Paid | -2,407 | -2,300 | -2,169 | -2,012 | -1,837 |
+| Other Financing Activities | -93 | -86 | -136 | -102 | -151 |
+| Financing Cash Flow | -2,292 | -5,820 | -5,888 | -7,447 | -4,836 |
+| **Net Cash Flow** | | | | | |
+| Foreign Exchange Rate Adjustments | 11 | 1 | -16 | -91 | -143 |
+| Net Cash Flow | 99 | -2,396 | 2,419 | -1,133 | -1,315 |
+| **Free Cash Flow** | | | | | |
+| Free Cash Flow | 2,184 | 3,268 | 6,617 | 4,872 | 4,430 |
+| Free Cash Flow Growth | -33.17% | -50.61% | 35.82% | 9.98% | -25.70% |
+| Free Cash Flow Margin | 4.71% | 7.06% | 12.88% | 9.51% | 9.48% |
+| Free Cash Flow Per Share | 1.48 | 2.20 | 4.33 | 3.10 | 2.75 |
+| Levered Free Cash Flow | 1,889 | 3,725 | 5,853 | 3,718 | 2,899 |
+| Unlevered Free Cash Flow | 2,032 | 3,911 | 6,021 | 3,900 | 3,086 |
+| **Additional Metrics** | | | | | |
+| Cash Interest Paid | 323 | 389 | 381 | 347 | 290 |
+| Cash Income Tax Paid | - | 1,226 | 1,299 | 1,517 | 1,231 |
+| Change in Working Capital | -1,678 | -787 | 716 | -513 | -1,660 |
+
+Source: StockAnalysis.com, data from S&P Global Market Intelligence (last updated Oct 2, 2026).
+===== 700
+**Granularity:** Daily. The table shows 50 rows of daily data, sorted newest first.
+**First date:** Oct 7, 2026 (top row). **Last date:** Jul 29, 2026 (bottom row).
+
+| Date | Open | High | Low | Close | Adj. Close | Change | Volume |
+|---|---|---|---|---|---|---|---|
+| Oct 7, 2026 | 34.39 | 34.53 | 33.81 | 34.10 | 34.10 | -1.47% | 18,072,326 |
+| Oct 6, 2026 | 33.70 | 34.62 | 33.50 | 34.61 | 34.61 | 1.91% | 49,726,998 |
+| Oct 5, 2026 | 33.82 | 34.12 | 32.76 | 33.96 | 33.96 | 0.27% | 65,563,166 |
+| Oct 2, 2026 | 32.55 | 33.97 | 31.97 | 33.87 | 33.87 | -3.64% | 141,636,422 |
+| Oct 1, 2026 | 35.45 | 36.24 | 35.02 | 35.15 | 35.15 | -0.71% | 74,200,045 |
+| Sep 30, 2026 | 35.74 | 35.99 | 35.16 | 35.40 | 35.40 | -1.23% | 37,160,101 |
+| Sep 29, 2026 | 36.34 | 36.43 | 35.67 | 35.84 | 35.84 | -1.51% | 28,534,477 |
+| Sep 28, 2026 | 35.46 | 36.67 | 35.41 | 36.39 | 36.39 | 1.79% | 33,708,157 |
+| Sep 25, 2026 | 35.25 | 36.18 | 35.22 | 35.75 | 35.75 | -0.67% | 38,024,971 |
+| Sep 24, 2026 | 36.00 | 36.14 | 35.52 | 35.99 | 35.99 | -0.17% | 38,011,515 |
+| Sep 23, 2026 | 36.42 | 36.62 | 35.61 | 36.05 | 36.05 | -0.14% | 39,766,175 |
+| Sep 22, 2026 | 36.95 | 37.04 | 35.94 | 36.10 | 36.10 | - | 31,188,086 |
+| Sep 21, 2026 | 35.52 | 36.36 | 35.35 | 36.10 | 36.10 | 1.66% | 41,228,552 |
+| Sep 18, 2026 | 36.27 | 36.68 | 35.50 | 35.51 | 35.51 | -2.34% | 50,862,735 |
+| Sep 17, 2026 | 36.50 | 36.80 | 35.72 | 36.36 | 36.36 | 1.62% | 44,508,734 |
+| Sep 16, 2026 | 36.38 | 36.51 | 35.76 | 35.78 | 35.78 | -1.21% | 29,601,696 |
+| Sep 15, 2026 | 36.85 | 36.88 | 36.17 | 36.22 | 36.22 | -2.24% | 28,180,697 |
+| Sep 14, 2026 | 36.76 | 37.41 | 36.58 | 37.05 | 37.05 | 0.68% | 27,386,930 |
+| Sep 11, 2026 | 36.80 | 37.05 | 36.62 | 36.80 | 36.80 | 0.49% | 19,226,024 |
+| Sep 10, 2026 | 36.96 | 37.16 | 36.55 | 36.62 | 36.62 | -1.95% | 29,351,673 |
+| Sep 9, 2026 | 37.79 | 37.85 | 36.85 | 37.35 | 37.35 | -1.97% | 39,382,081 |
+| Sep 8, 2026 | 38.52 | 38.74 | 37.90 | 38.10 | 38.10 | -0.78% | 31,397,588 |
+| Sep 4, 2026 | 38.22 | 38.66 | 37.98 | 38.40 | 38.40 | -0.95% | 20,095,375 |
+| Sep 3, 2026 | 38.52 | 38.93 | 37.95 | 38.77 | 38.77 | 1.39% | 29,597,535 |
+| Sep 2, 2026 | 38.06 | 38.73 | 38.01 | 38.24 | 38.24 | 0.31% | 20,727,150 |
+| Sep 1, 2026 | 38.36 | 38.57 | 37.97 | 38.12 | 38.12 | -1.37% | 22,241,121 |
+| Aug 31, 2026 | 39.41 | 39.88 | 39.03 | 39.06 | 38.65 | -1.36% | 23,905,303 |
+| Aug 28, 2026 | 38.71 | 39.76 | 38.56 | 39.60 | 39.18 | 3.02% | 28,437,375 |
+| Aug 27, 2026 | 38.50 | 38.80 | 38.17 | 38.44 | 38.04 | -0.39% | 36,573,774 |
+| Aug 26, 2026 | 39.40 | 39.48 | 38.41 | 38.59 | 38.18 | -2.25% | 38,604,277 |
+| Aug 25, 2026 | 39.52 | 39.87 | 39.03 | 39.48 | 39.07 | -3.12% | 41,524,950 |
+| Aug 24, 2026 | 41.00 | 41.34 | 40.68 | 40.75 | 40.32 | -0.02% | 18,839,142 |
+| Aug 21, 2026 | 40.26 | 41.13 | 40.24 | 40.76 | 40.33 | 1.37% | 14,707,825 |
+| Aug 20, 2026 | 40.49 | 40.64 | 39.81 | 40.21 | 39.79 | -2.05% | 16,662,075 |
+| Aug 19, 2026 | 40.53 | 41.31 | 40.37 | 41.05 | 40.62 | 2.47% | 22,055,694 |
+| Aug 18, 2026 | 39.65 | 40.64 | 39.23 | 40.06 | 39.64 | 2.48% | 39,173,305 |
+| Aug 17, 2026 | 40.35 | 40.60 | 38.86 | 39.09 | 38.68 | -4.03% | 58,659,916 |
+| Aug 14, 2026 | 41.23 | 41.33 | 40.71 | 40.73 | 40.30 | -1.21% | 23,639,837 |
+| Aug 13, 2026 | 40.74 | 41.47 | 40.48 | 41.23 | 40.80 | 1.78% | 23,641,669 |
+| Aug 12, 2026 | 41.03 | 41.25 | 40.45 | 40.51 | 40.08 | -1.96% | 28,760,277 |
+| Aug 11, 2026 | 41.48 | 41.53 | 40.83 | 41.32 | 40.89 | -1.88% | 25,537,953 |
+| Aug 10, 2026 | 41.74 | 42.23 | 41.14 | 42.11 | 41.67 | 0.98% | 21,664,561 |
+| Aug 7, 2026 | 42.02 | 42.37 | 41.61 | 41.70 | 41.26 | -0.71% | 22,042,280 |
+| Aug 6, 2026 | 42.52 | 42.64 | 41.85 | 42.00 | 41.56 | -1.06% | 18,150,304 |
+| Aug 5, 2026 | 41.65 | 42.48 | 41.36 | 42.45 | 42.00 | 2.22% | 22,088,625 |
+| Aug 4, 2026 | 41.35 | 42.09 | 40.91 | 41.53 | 41.09 | -2.60% | 27,802,845 |
+| Aug 3, 2026 | 42.57 | 43.21 | 42.06 | 42.64 | 42.19 | 2.23% | 21,329,853 |
+| Jul 31, 2026 | 42.02 | 42.08 | 41.49 | 41.71 | 41.27 | -1.37% | 22,622,385 |
+| Jul 30, 2026 | 42.50 | 42.50 | 41.23 | 42.29 | 41.85 | -2.15% | 16,977,553 |
+| Jul 29, 2026 | 42.60 | 43.69 | 42.40 | 43.22 | 42.77 | 0.39% | 15,029,142 |
+
+The page lists "Page 1 of 3," so these are only the first 50 rows of the full history. The Sep 22, 2026 change is shown as "-" on the source page.
+===== 704
+**Nike (NKE) Annual Balance Sheet**
+
+Financials in millions USD. Fiscal year is June - May. (TTM column omitted, since it is not a fiscal year.)
+
+### Assets
+
+| Fiscal Year | FY 2026 | FY 2025 | FY 2024 | FY 2023 | FY 2022 |
+|---|---|---|---|---|---|
+| Period Ending | May '26 May 31, 2026 | May '25 May 31, 2025 | May '24 May 31, 2024 | May '23 May 31, 2023 | May '22 May 31, 2022 |
+| Cash & Equivalents | 7,563 | 7,464 | 9,860 | 7,441 | 8,574 |
+| Short-Term Investments | 1,464 | 1,687 | 1,722 | 3,234 | 4,423 |
+| Cash & Short-Term Investments | 9,027 | 9,151 | 11,582 | 10,675 | 12,997 |
+| Cash Growth | -1.35% | -20.99% | 8.50% | -17.87% | -3.55% |
+| Receivables | 5,931 | 4,717 | 4,427 | 4,131 | 4,667 |
+| Inventory | 7,501 | 7,489 | 7,519 | 8,454 | 8,420 |
+| Prepaid Expenses | 1,493 | 1,392 | 1,224 | 1,223 | 1,261 |
+| Other Current Assets | 651 | 613 | 630 | 719 | 868 |
+| Total Current Assets | 24,603 | 23,362 | 25,382 | 25,202 | 28,213 |
+| Property, Plant & Equipment | 7,634 | 7,540 | 7,718 | 8,004 | 7,717 |
+| Long-Term Investments | 6 | 24 | - | - | - |
+| Goodwill | 240 | 240 | 240 | 281 | 284 |
+| Other Intangible Assets | 259 | 259 | 259 | 274 | 286 |
+| Long-Term Deferred Tax Assets | 2,731 | 2,668 | 2,465 | 2,026 | 2,295 |
+| Other Long-Term Assets | 2,937 | 2,486 | 2,046 | 1,744 | 1,526 |
+| Total Assets | 38,410 | 36,579 | 38,110 | 37,531 | 40,321 |
+
+### Liabilities
+
+| Fiscal Year | FY 2026 | FY 2025 | FY 2024 | FY 2023 | FY 2022 |
+|---|---|---|---|---|---|
+| Period Ending | May '26 May 31, 2026 | May '25 May 31, 2025 | May '24 May 31, 2024 | May '23 May 31, 2023 | May '22 May 31, 2022 |
+| Accounts Payable | 3,600 | 3,479 | 2,851 | 2,862 | 3,358 |
+| Accrued Expenses | 3,885 | 3,484 | 3,880 | 4,200 | 1,793 |
+| Short-Term Debt | - | - | 6 | 6 | 10 |
+| Current Portion of Long-Term Debt | 2,000 | - | 1,000 | - | 500 |
+| Current Portion of Leases | 478 | 502 | 477 | 425 | 420 |
+| Current Income Taxes Payable | 377 | 669 | 534 | 240 | 222 |
+| Other Current Liabilities | 2,207 | 2,432 | 1,845 | 1,523 | 4,427 |
+| Total Current Liabilities | 12,547 | 10,566 | 10,593 | 9,256 | 10,730 |
+| Long-Term Debt | 5,952 | 7,964 | 7,934 | 8,927 | 8,920 |
+| Long-Term Leases | 2,613 | 2,550 | 2,566 | 2,786 | 2,777 |
+| Pension & Post-Retirement Benefits | - | - | - | - | 30 |
+| Long-Term Deferred Tax Liabilities | 138 | 126 | 145 | 227 | 2,324 |
+| Other Long-Term Liabilities | 2,295 | 2,160 | 2,442 | 2,331 | 259 |
+| Total Liabilities | 23,545 | 23,366 | 23,680 | 23,527 | 25,040 |
+
+### Shareholders' Equity
+
+| Fiscal Year | FY 2026 | FY 2025 | FY 2024 | FY 2023 | FY 2022 |
+|---|---|---|---|---|---|
+| Period Ending | May '26 May 31, 2026 | May '25 May 31, 2025 | May '24 May 31, 2024 | May '23 May 31, 2023 | May '22 May 31, 2022 |
+| Common Stock | 3 | 3 | 3 | 3 | 3 |
+| Additional Paid-In Capital | 15,158 | 14,195 | 13,409 | 12,412 | 11,484 |
+| Retained Earnings | -155 | -727 | 965 | 1,358 | 3,476 |
+| Comprehensive Income & Other | -141 | -258 | 53 | 231 | 318 |
+| Shareholders' Equity | 14,865 | 13,213 | 14,430 | 14,004 | 15,281 |
+| Total Liabilities & Equity | 38,410 | 36,579 | 38,110 | 37,531 | 40,321 |
+
+### Additional Metrics
+
+| Fiscal Year | FY 2026 | FY 2025 | FY 2024 | FY 2023 | FY 2022 |
+|---|---|---|---|---|---|
+| Period Ending | May '26 May 31, 2026 | May '25 May 31, 2025 | May '24 May 31, 2024 | May '23 May 31, 2023 | May '22 May 31, 2022 |
+| Total Debt | 11,043 | 11,016 | 11,983 | 12,144 | 12,627 |
+| Net Cash (Debt) | -2,016 | -1,865 | -401 | -1,469 | 370 |
+| Net Cash Growth | - | - | - | - | -44.19% |
+| Net Cash Per Share | -1.36 | -1.25 | -0.26 | -0.94 | 0.23 |
+| Filing Date Shares Outstanding | 1,483 | 1,477 | 1,499 | 1,530 | 1,569 |
+| Total Common Shares Outstanding | 1,483 | 1,476 | 1,503 | 1,532 | 1,571 |
+| Working Capital | 12,056 | 12,796 | 14,789 | 15,946 | 17,483 |
+| Book Value Per Share | 10.02 | 8.95 | 9.60 | 9.14 | 9.73 |
+| Tangible Book Value | 14,366 | 12,714 | 13,931 | 13,449 | 14,711 |
+| Tangible Book Value Per Share | 9.69 | 8.61 | 9.27 | 8.78 | 9.36 |
+| Land | 333 | 334 | 329 | 326 | 330 |
+| Buildings | 3,589 | 3,510 | 3,439 | 3,293 | 3,170 |
+| Machinery | 3,027 | 2,954 | 3,123 | 3,083 | 2,870 |
+| Construction In Progress | 427 | 404 | 193 | 525 | 399 |
+| Leasehold Improvements | 2,114 | 2,037 | 2,023 | 1,876 | 1,712 |
+===== 705
+**Granularity:** Daily (one row per trading day).
+**First date:** Jul 27, 2026 (earliest row, at the bottom of the table)
+**Last date:** Oct 5, 2026 (most recent row, at the top)
+
+| Date | Open | High | Low | Close | Adj. Close | Change | Volume |
+|---|---|---|---|---|---|---|---|
+| Oct 5, 2026 | 769.69 | 776.07 | 769.63 | 776.21 | - | 0.85% | 25,929,421 |
+| Oct 2, 2026 | 770.58 | 772.65 | 767.15 | 769.64 | 769.64 | 0.74% | 45,459,431 |
+| Oct 1, 2026 | 764.36 | 765.65 | 758.79 | 763.99 | 763.99 | 0.18% | 46,226,989 |
+| Sep 30, 2026 | 766.45 | 769.41 | 762.18 | 762.63 | 762.63 | -0.21% | 59,922,080 |
+| Sep 29, 2026 | 766.83 | 766.98 | 762.35 | 764.20 | 764.20 | -0.18% | 35,518,741 |
+| Sep 28, 2026 | 768.35 | 769.54 | 763.72 | 765.61 | 765.61 | -0.74% | 40,784,108 |
+| Sep 25, 2026 | 768.78 | 772.28 | 766.29 | 771.35 | 771.35 | 0.54% | 35,014,996 |
+| Sep 24, 2026 | 764.07 | 768.95 | 763.25 | 767.18 | 767.18 | -0.08% | 41,448,307 |
+| Sep 23, 2026 | 772.79 | 773.05 | 766.50 | 767.81 | 767.81 | -0.72% | 43,595,512 |
+| Sep 22, 2026 | 774.03 | 775.14 | 772.57 | 773.38 | 773.38 | -0.02% | 34,802,336 |
+| Sep 21, 2026 | 766.25 | 774.89 | 766.03 | 773.50 | 773.50 | 1.55% | 50,484,685 |
+| Sep 18, 2026 | 761.31 | 762.00 | 757.97 | 761.69 | 761.69 | 0.13% | 65,395,148 |
+| Sep 17, 2026 | 763.15 | 763.57 | 759.96 | 762.60 | 760.71 | 1.13% | 49,652,754 |
+| Sep 16, 2026 | 759.50 | 761.67 | 749.60 | 754.05 | 752.19 | -0.44% | 59,217,653 |
+| Sep 15, 2026 | 760.12 | 760.35 | 756.15 | 757.39 | 755.52 | -0.46% | 46,194,964 |
+| Sep 14, 2026 | 759.00 | 763.52 | 757.93 | 760.88 | 759.00 | -0.45% | 43,992,428 |
+| Sep 11, 2026 | 764.72 | 766.38 | 763.60 | 764.29 | 762.40 | 0.85% | 45,512,741 |
+| Sep 10, 2026 | 758.03 | 760.11 | 756.64 | 757.83 | 755.96 | -0.60% | 42,740,375 |
+| Sep 9, 2026 | 764.08 | 764.47 | 760.94 | 762.40 | 760.51 | -0.46% | 32,812,411 |
+| Sep 8, 2026 | 769.07 | 769.70 | 765.14 | 765.96 | 764.07 | -0.55% | 44,746,095 |
+| Sep 4, 2026 | 772.01 | 772.87 | 769.00 | 770.19 | 768.29 | -0.39% | 34,054,199 |
+| Sep 3, 2026 | 767.90 | 774.03 | 767.45 | 773.17 | 771.26 | 1.05% | 43,531,581 |
+| Sep 2, 2026 | 762.45 | 766.43 | 761.73 | 765.16 | 763.27 | 0.44% | 29,566,216 |
+| Sep 1, 2026 | 762.01 | 764.67 | 759.48 | 761.78 | 759.90 | -0.69% | 41,126,315 |
+| Aug 31, 2026 | 767.33 | 768.00 | 764.72 | 767.05 | 765.15 | -0.30% | 38,810,779 |
+| Aug 28, 2026 | 771.76 | 775.30 | 768.31 | 769.35 | 767.45 | -0.23% | 36,744,344 |
+| Aug 27, 2026 | 768.50 | 772.36 | 767.16 | 771.10 | 769.19 | 0.66% | 34,557,064 |
+| Aug 26, 2026 | 764.73 | 767.35 | 763.93 | 766.08 | 764.19 | 0.02% | 28,751,592 |
+| Aug 25, 2026 | 766.16 | 766.78 | 763.05 | 765.91 | 764.02 | 0.32% | 27,422,263 |
+| Aug 24, 2026 | 764.78 | 765.22 | 762.08 | 763.47 | 761.58 | -0.29% | 32,430,886 |
+| Aug 21, 2026 | 766.05 | 767.85 | 764.17 | 765.72 | 763.83 | 0.41% | 39,188,673 |
+| Aug 20, 2026 | 765.96 | 768.15 | 762.04 | 762.60 | 760.71 | -0.84% | 45,520,302 |
+| Aug 19, 2026 | 770.36 | 772.47 | 768.10 | 769.06 | 767.16 | 0.21% | 40,306,023 |
+| Aug 18, 2026 | 768.70 | 769.50 | 766.92 | 767.45 | 765.55 | -0.68% | 43,920,908 |
+| Aug 17, 2026 | 776.18 | 776.78 | 772.51 | 772.67 | 770.76 | -0.47% | 34,356,577 |
+| Aug 14, 2026 | 778.54 | 778.80 | 775.43 | 776.34 | 774.42 | -0.20% | 31,367,913 |
+| Aug 13, 2026 | 774.87 | 779.37 | 774.11 | 777.88 | 775.96 | 0.70% | 35,634,483 |
+| Aug 12, 2026 | 774.71 | 774.90 | 771.28 | 772.49 | 770.58 | 0.25% | 33,179,126 |
+| Aug 11, 2026 | 774.53 | 774.61 | 769.20 | 770.56 | 768.65 | -0.32% | 36,740,555 |
+| Aug 10, 2026 | 772.60 | 775.05 | 771.62 | 773.03 | 771.12 | -0.03% | 39,249,478 |
+| Aug 7, 2026 | 771.02 | 773.92 | 769.61 | 773.26 | 771.35 | 0.61% | 43,586,333 |
+| Aug 6, 2026 | 770.21 | 771.82 | 767.46 | 768.56 | 766.66 | -0.16% | 38,416,896 |
+| Aug 5, 2026 | 775.85 | 776.85 | 769.51 | 769.79 | 767.89 | -0.20% | 44,689,081 |
+| Aug 4, 2026 | 760.63 | 773.41 | 760.52 | 771.33 | 769.42 | 1.80% | 69,154,788 |
+| Aug 3, 2026 | 749.44 | 758.58 | 748.80 | 757.67 | 755.80 | 1.42% | 59,927,538 |
+| Jul 31, 2026 | 744.68 | 748.90 | 737.68 | 747.03 | 745.18 | 0.72% | 62,445,899 |
+| Jul 30, 2026 | 736.05 | 742.45 | 734.59 | 741.69 | 739.86 | 1.68% | 66,811,268 |
+| Jul 29, 2026 | 739.97 | 742.68 | 729.10 | 729.46 | 727.66 | -1.54% | 70,697,215 |
+| Jul 28, 2026 | 739.19 | 742.79 | 735.98 | 740.86 | 739.03 | 0.24% | 47,322,247 |
+| Jul 27, 2026 | 744.91 | 745.53 | 735.87 | 739.09 | 737.26 | 0.02% | 41,461,194 |
+>>> 708 {"command": "pip install --break-system-packages -q pytest pyyaml yfinance 2>&1 | tail -2; python3 - <<'EOF'\nimport yfinance, yaml, pytest, openpyxl\nprint('yfinance', yfinance.__version__, 'yaml', yaml.__version__, 'pytest', pytest.__version__)\nfrom yfinance import const\nfor name in dir(const):\
+>>> 709 {"url": "https://en.wikipedia.org/wiki/Altman_Z-score", "prompt": "Give the original Z-score formula with coefficients and the five ratios, the zones thresholds (distress/grey/safe), the Z' (private) and Z'' (non-manufacturers/emerging markets) formulas with coefficients and thresholds, and reported
+>>> 710 {"url": "https://stockanalysis.com/etf/spy/", "prompt": "Give SPY's last close/price and date, 1-year total return or 52-week price change, YTD return, 50-day and 200-day moving average, RSI, beta if shown. Exact numbers as printed."}
+>>> 711 {"query": "10-year Treasury yield today October 9 2026", "mode": "standard"}
+>>> 712 {"url": "https://quantpedia.com/strategies/momentum-factor-effect-in-stocks/", "prompt": "Summarize the momentum factor in stocks: formation period (12-1), holding period, reported returns/Sharpe with exact numbers, original Jegadeesh-Titman findings, momentum crashes and caveats."}
+===== 716
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+yfinance 1.7.0 yaml 6.0.3 pytest 9.1.1
+fundamentals_keys dict ['financials', 'balance-sheet', 'cash-flow']
+ordered_keys list None
+===== 717
+Web search results for query: "10-year Treasury yield today October 9 2026"
+
+Links: [{"title":"10 years treasury yield","url":"https://onestop.cnmi.gov/library/c3VaTp/JRhI6N/10-years-treasury-yield.pdf"},{"title":"10 year treasury note yield","url":"https://onestop.cnmi.gov/repository/SiQpUq/q950dy/10-year-treasury-note-yield.pdf"},{"title":"10 Year Treasury Yield Forecast 2026","url":"https://edge-eu-west-2.betteruptime.com/en/10-year-treasury-yield-forecast-2026.html"},{"title":"10-Year Treasury Yield Rises to 4.145% — Data Talk","url":"https://www.morningstar.com/news/dow-jones/202603059767/10-year-treasury-yield-rises-to-4145-data-talk"},{"title":"U.S. 10-year Treasury yield reportedly hits 5.2%, highest since 2007","url":"https://digg.com/world-business/yy8sp23a"},{"title":"10 year treasury","url":"https://onestop.cnmi.gov/research-data/czMtsi/6i3Eye/10-year-treasury.pdf"},{"title":"10 Year Treasury Yield","url":"https://gsdms.csir.co.za/daxhinno/10-year-treasury-yield"},{"title":"10 year treasury note yield","url":"https://dev.onestop.cnmi.gov/library/epvwHf/i7Yy6J/10-year-treasury-note-yield.pdf"},{"title":"# Will the yield of 10-year U.S. treasury notes be above 5.14 on Dec 31, 2026","url":"https://simplefunctions.dev/odds/note10y.md"}]
+
+
+REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.
+===== 718
+**SPY (State Street SPDR S&P 500 ETF)**
+
+- **Last close:** 778.57 at close on Oct 9, 2026, 4:00 PM EDT (+4.64, +0.60%)
+- **1-year total return:** 16.91%. The page says, "SPY had a total return of 16.91% in the past year, including dividends."
+- **52-week price change:** Not shown. The 52-week range is 629.28 to 781.62.
+- **YTD return:** Not shown.
+- **50-day and 200-day moving averages:** Not shown.
+- **RSI:** Not shown.
+- **Beta:** 1.01
+===== 719
+**Original Altman Z-score (1968, publicly held manufacturers)**
+
+Z = 1.2X1 + 1.4X2 + 3.3X3 + 0.6X4 + 1.0X5
+
+- X1 = working capital / total assets
+- X2 = retained earnings / total assets
+- X3 = EBIT / total assets
+- X4 = market value of equity / book value of total liabilities
+- X5 = sales / total assets
+
+Zones: Z > 2.99 is "safe," 1.81 < Z < 2.99 is "grey," and Z < 1.81 is "distress."
+
+**Private (Z') and non-manufacturer/emerging-market (Z'') variants**
+
+- **Z' (private companies):** The page names this variant but does not give its coefficients or zone thresholds. Its X4 uses book value of equity / total liabilities.
+- **Z'' (non-manufacturers):** Z = 6.56X1 + 3.26X2 + 6.72X3 + 1.05X4. The page gives no zone thresholds for this model.
+- **Emerging-markets model:** Z = 3.25 + 6.56X1 + 3.26X2 + 6.72X3 + 1.05X4. Zones: Z > 2.6 is "safe," 1.1 < Z < 2.6 is "grey," and Z < 1.1 is "distress."
+
+**Reported accuracy**
+
+- Initial test (Altman, 1968): 72% accurate two years before bankruptcy, with a Type II error of 6%.
+- Later tests (Altman, 2000), covering periods up to 1999: roughly 80–90% accurate one year before bankruptcy, with a Type II error of roughly 15–20%.
+
+**Limitations**
+
+- The page says the accuracy figures overstate predictive ability. Critics call the original work "largely descriptive" and note it shows that failed and non-failed firms have different ratios, not that the ratios predict failure.
+- The original sample was small: 66 manufacturers, half of which filed for bankruptcy.
+- The page notes the page's Type II error definition conflicts with its earlier "false negatives" wording.
+- The model is not recommended for financial companies because of their opaque balance sheets and off-balance-sheet items.
+- Modern academic models rely more heavily on market-based data than on the accounting ratios the Z-score uses.
+===== 720
+## Momentum Factor in Stocks: Summary
+
+**Formation period (12-1):** Rank stocks by their past 12-month return, skipping the most recent month to avoid microstructure and liquidity biases. Go long high-momentum stocks and short low-momentum stocks. The universe is NYSE, AMEX, and NASDAQ stocks.
+
+**Holding period:** The page says the holding period (K months) and formation period (J months) are the investor's choice, but it presents 12-1 results. The strategy profile lists monthly rebalancing.
+
+**Reported returns (Table 1, U.S. UMD, gross of costs):**
+
+| Sample period | Annualized return | Sharpe ratio |
+|---|---|---|
+| 1927–2013 | 8.3% | 0.50 |
+| 1963–2013 | 8.4% | 0.57 |
+| 1991–2013 (out-of-sample) | 6.3% | 0.36 |
+
+- The page estimates volatility at 16.6% for 1927–2013, derived from the return and Sharpe ratio.
+- It lists a maximum drawdown of -87.41% for the 1927–2013 period.
+- Returns exclude transaction costs, so they are not net of trading frictions.
+
+**Original Jegadeesh and Titman findings:** The page calls their work the oldest and most well-known study on the topic. Its referenced abstract says stocks that performed best (worst) over three to 12 months tended to keep performing well (poorly) over the following three to 12 months. It also reports that these strategies were consistently profitable in the U.S. and most developed markets, and that high earnings momentum outperformed low earnings momentum.
+
+**Momentum crashes and caveats:**
+- A pure long-short momentum portfolio had a disastrous 2009, with more than 80% drawdown, according to Kenneth French data cited on the page.
+- Barroso and Santa-Clara note that momentum offered the highest Sharpe ratio among the market, value, and size factors, but also "the worst crashes." Their risk-managed version "nearly doubles the Sharpe ratio."
+- Crashes tend to occur as markets rebound after large declines, linked to momentum's time-varying negative beta after bear markets.
+- Long-only momentum is more profitable than the short side (Griffin, Ji, and Martin), so it is more accessible to institutions.
+- Momentum offers little hedging value in bear markets, since the pure long-only version cannot serve as a hedge.
+- Some references report weaker recent results: Bhattacharya et al. find momentum profits insignificant since the late 1990s, and Abhyankar et al. find U.S. returns about 50% lower over 1996–2016.
+- Transaction costs are excluded from the headline results, and the strategy is rated "Complex" with "Strong" confidence in the anomaly's validity.

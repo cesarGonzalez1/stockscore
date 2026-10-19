@@ -1,0 +1,70 @@
+# Configuración editable del scorecard. Cambia aquí rangos/pesos sin tocar código.
+# Cada métrica se mapea LINEALMENTE a 0-100 entre low y high (recortado). Si higher_better=false, se invierte.
+assumptions:
+  discount_rate: 0.09        # costo de capital (DCF / DCF inverso). Ajustable: 8-10% típico.
+  terminal_growth: 0.03
+  growth_cap: 0.15           # tope del crecimiento base del DCF (evita fantasías)
+  dcf_years: 10
+  tax_rate: 0.21
+  risk_free: 0.04            # para drift CAPM de las simulaciones (supuesto, ajustar)
+  equity_premium: 0.05
+  swing: {target: 0.08, stop: 0.05, horizon_days: 42, sims: 4000, seed: 7}
+  earnings_window_days: [3, 30]   # ventana "útil" de catalizador (días hasta earnings)
+  short_history_days: 120         # menos precios que esto => aviso de ventana corta
+  risk_window_days: 504           # vol/drawdown/swing usan como máximo los últimos ~2 años (aunque bajes 5 años para backtest)
+profiles:                         # peso de cada pilar (se renormaliza si falta alguno)
+  swing:    {value: 0.20, quality: 0.25, growth: 0.15, trend: 0.20, risk: 0.10, catalysts: 0.10}   # tendencia 30%->20%: backtest de precio sin ventaja (t≈0.3)
+  investor: {value: 0.30, quality: 0.30, growth: 0.20, trend: 0.10, risk: 0.10, catalysts: 0.00}
+pillars:
+  value:
+    - {metric: fcf_yield,        low: 0.01, high: 0.07, higher_better: true,  weight: 2.0}
+    - {metric: earnings_yield,   low: 0.02, high: 0.08, higher_better: true,  weight: 1.0}
+    - {metric: ev_ebit,          low: 8,    high: 30,   higher_better: false, weight: 1.0}
+    - {metric: peg,              low: 0.8,  high: 3.5,  higher_better: false, weight: 1.0}
+    - {metric: growth_headroom,  low: -0.05, high: 0.08, higher_better: true, weight: 2.0}
+    - {metric: dcf_mos,          low: -0.5, high: 0.3,  higher_better: true,  weight: 1.5}
+    - {metric: book_to_price,    low: 0.05, high: 0.60, higher_better: true,  weight: 0.5}
+  quality:
+    - {metric: piotroski,        low: 3,    high: 8,    higher_better: true,  weight: 2.0}
+    - {metric: altman_z2,        low: 1.1,  high: 6.0,  higher_better: true,  weight: 1.0}
+    - {metric: roic,             low: 0.05, high: 0.30, higher_better: true,  weight: 2.0}
+    - {metric: roe,              low: 0.05, high: 0.25, higher_better: true,  weight: 1.0}
+    - {metric: gross_profitability, low: 0.10, high: 0.45, higher_better: true, weight: 1.0}
+    - {metric: op_margin,        low: 0.05, high: 0.30, higher_better: true,  weight: 1.0}
+    - {metric: fcf_conversion,   low: 0.6,  high: 1.1,  higher_better: true,  weight: 1.0}
+    - {metric: accruals,         low: -0.02, high: 0.10, higher_better: false, weight: 1.0}
+    - {metric: margin_trend,     low: -0.05, high: 0.03, higher_better: true, weight: 1.0}
+    - {metric: net_debt_ebitda,  low: 0.0,  high: 4.0,  higher_better: false, weight: 1.0}
+  growth:
+    - {metric: rev_cagr_3y,      low: -0.02, high: 0.12, higher_better: true, weight: 1.0}
+    - {metric: ni_cagr_3y,       low: -0.05, high: 0.15, higher_better: true, weight: 1.0}
+    - {metric: rev_ttm_growth,   low: -0.05, high: 0.15, higher_better: true, weight: 1.5}
+    - {metric: fwd_eps_growth,   low: 0.0,   high: 0.20, higher_better: true, weight: 1.5}
+    - {metric: analyst_eps_growth_3y, low: 0.02, high: 0.18, higher_better: true, weight: 1.0}
+  trend:
+    - {metric: mom,              low: -0.20, high: 0.50, higher_better: true, weight: 2.0}
+    - {metric: vs_sma200,        low: -0.15, high: 0.25, higher_better: true, weight: 1.5}
+    - {metric: sma50_vs_200,     low: -0.10, high: 0.15, higher_better: true, weight: 1.0}
+    - {metric: slope_t,          low: -2.0,  high: 6.0,  higher_better: true, weight: 1.0}
+    - {metric: rel_strength,     low: -0.20, high: 0.30, higher_better: true, weight: 1.5}
+  risk:
+    - {metric: vol_ann,          low: 0.15, high: 0.60, higher_better: false, weight: 1.5}
+    - {metric: max_drawdown,     low: -0.40, high: -0.05, higher_better: true, weight: 1.0}
+    - {metric: beta,             low: 0.7,  high: 1.6,  higher_better: false, weight: 1.0}
+    - {metric: swing_prob,       low: 0.20, high: 0.45, higher_better: true,  weight: 0.5}   # se satura con vol alta (>35%): peso bajo
+  catalysts:
+    - {metric: analyst_upside,   low: -0.10, high: 0.30, higher_better: true, weight: 1.0}
+    - {metric: consensus_score,  low: 2.5,  high: 4.5,  higher_better: true,  weight: 1.0}
+    - {metric: event_in_window,  low: 0,    high: 1,    higher_better: true,  weight: 1.0}
+grades: {A: 80, B: 70, C: 60, D: 50}
+vetoes:
+  altman_z2_min: 1.1       # zona de quiebra
+  piotroski_min: 3         # <= (este-1) veta
+  veto_cap: 49             # el puntaje total no puede pasar de aquí si hay veto
+warnings:
+  rsi_overbought: 75
+  dcf_far_above: -0.30     # dcf_mos menor que esto => "precio muy por encima de DCF"
+  min_coverage: 0.70
+  earnings_soon_days: 14
+  cyclical_cap_signal: true          # en sectores cíclicos CANDIDATA baja a VIGILAR
+  cyclical_sectors: [Energy, Basic Materials]   # FCF/EPS TTM dependen del ciclo de materias primas

@@ -1,0 +1,348 @@
+{
+ "currency": "USD",
+ "as_of": "2026-10-09",
+ "source": "stockanalysis.com (S&P Global MI) leído 2026-10-09; millones USD; precios diarios ventana corta (~50 días)",
+ "ticker": "NKE",
+ "name": "NIKE, Inc.",
+ "sector": "Consumer Discretionary",
+ "price": 34.71,
+ "fiscal": [
+  {
+   "year": 2026,
+   "revenue": 46398,
+   "gross_profit": 20065,
+   "operating_income": 4182,
+   "net_income": 3108,
+   "cfo": 2868,
+   "capex": 684,
+   "total_assets": 38410,
+   "current_assets": 24603,
+   "current_liabilities": 12547,
+   "total_liabilities": 23545,
+   "equity": 14865,
+   "retained_earnings": -155,
+   "long_term_debt": 5952,
+   "total_debt": 11043,
+   "cash_st": 9027,
+   "shares_m": 1483,
+   "da": 747
+  },
+  {
+   "year": 2025,
+   "revenue": 46309,
+   "gross_profit": 19790,
+   "operating_income": 3702,
+   "net_income": 3219,
+   "cfo": 3698,
+   "capex": 430,
+   "total_assets": 36579,
+   "current_assets": 23362,
+   "current_liabilities": 10566,
+   "total_liabilities": 23366,
+   "equity": 13213,
+   "retained_earnings": -727,
+   "long_term_debt": 7964,
+   "total_debt": 11016,
+   "cash_st": 9151,
+   "shares_m": 1476,
+   "da": 775
+  },
+  {
+   "year": 2024,
+   "revenue": 51362,
+   "gross_profit": 22951,
+   "operating_income": 6754,
+   "net_income": 5700,
+   "cfo": 7429,
+   "capex": 812,
+   "total_assets": 38110,
+   "current_assets": 25382,
+   "current_liabilities": 10593,
+   "total_liabilities": 23680,
+   "equity": 14430,
+   "retained_earnings": 965,
+   "long_term_debt": 7934,
+   "total_debt": 11983,
+   "cash_st": 11582,
+   "shares_m": 1503,
+   "da": 796
+  },
+  {
+   "year": 2023,
+   "revenue": 51217,
+   "gross_profit": 22292,
+   "operating_income": 5915,
+   "net_income": 5070,
+   "cfo": 5841,
+   "capex": 969,
+   "total_assets": 37531,
+   "current_assets": 25202,
+   "current_liabilities": 9256,
+   "total_liabilities": 23527,
+   "equity": 14004,
+   "retained_earnings": 1358,
+   "long_term_debt": 8927,
+   "total_debt": 12144,
+   "cash_st": 10675,
+   "shares_m": 1532,
+   "da": 703
+  },
+  {
+   "year": 2022,
+   "revenue": 46710,
+   "gross_profit": 21479,
+   "operating_income": 6675,
+   "net_income": 6046,
+   "cfo": 5188,
+   "capex": 758,
+   "total_assets": 40321,
+   "current_assets": 28213,
+   "current_liabilities": 10730,
+   "total_liabilities": 25040,
+   "equity": 15281,
+   "retained_earnings": 3476,
+   "long_term_debt": 8920,
+   "total_debt": 12627,
+   "cash_st": 12997,
+   "shares_m": 1571,
+   "da": 840
+  }
+ ],
+ "ttm": {
+  "revenue": 45891,
+  "gross_profit": 19920,
+  "operating_income": 4143,
+  "net_income": 3093,
+  "ebitda": 4890,
+  "cfo": 2780,
+  "fcf": 2110,
+  "eps": 2.09
+ },
+ "market": {
+  "market_cap_m": 51560,
+  "enterprise_value_m": 54310,
+  "shares_out_m": 1490,
+  "pe": 16.64,
+  "forward_pe": 25.71,
+  "forward_eps": 1.35,
+  "beta": 1.1,
+  "ret_52w": -0.4976,
+  "sma50": 38.15,
+  "sma200": 48.01,
+  "rsi14": 37.75,
+  "analyst_target": 38.04,
+  "analyst_consensus": "Hold",
+  "analyst_count": 42,
+  "eps_growth_3y": 0.1192,
+  "revenue_growth_3y": -0.0079,
+  "dividend_yield": 0.0473
+ },
+ "price_history": [
+  [
+   "2026-07-29",
+   43.22
+  ],
+  [
+   "2026-07-30",
+   42.29
+  ],
+  [
+   "2026-07-31",
+   41.71
+  ],
+  [
+   "2026-08-03",
+   42.64
+  ],
+  [
+   "2026-08-04",
+   41.53
+  ],
+  [
+   "2026-08-05",
+   42.45
+  ],
+  [
+   "2026-08-06",
+   42.0
+  ],
+  [
+   "2026-08-07",
+   41.7
+  ],
+  [
+   "2026-08-10",
+   42.11
+  ],
+  [
+   "2026-08-11",
+   41.32
+  ],
+  [
+   "2026-08-12",
+   40.51
+  ],
+  [
+   "2026-08-13",
+   41.23
+  ],
+  [
+   "2026-08-14",
+   40.73
+  ],
+  [
+   "2026-08-17",
+   39.09
+  ],
+  [
+   "2026-08-18",
+   40.06
+  ],
+  [
+   "2026-08-19",
+   41.05
+  ],
+  [
+   "2026-08-20",
+   40.21
+  ],
+  [
+   "2026-08-21",
+   40.76
+  ],
+  [
+   "2026-08-24",
+   40.75
+  ],
+  [
+   "2026-08-25",
+   39.48
+  ],
+  [
+   "2026-08-26",
+   38.59
+  ],
+  [
+   "2026-08-27",
+   38.44
+  ],
+  [
+   "2026-08-28",
+   39.6
+  ],
+  [
+   "2026-08-31",
+   39.06
+  ],
+  [
+   "2026-09-01",
+   38.12
+  ],
+  [
+   "2026-09-02",
+   38.24
+  ],
+  [
+   "2026-09-03",
+   38.77
+  ],
+  [
+   "2026-09-04",
+   38.4
+  ],
+  [
+   "2026-09-08",
+   38.1
+  ],
+  [
+   "2026-09-09",
+   37.35
+  ],
+  [
+   "2026-09-10",
+   36.62
+  ],
+  [
+   "2026-09-11",
+   36.8
+  ],
+  [
+   "2026-09-14",
+   37.05
+  ],
+  [
+   "2026-09-15",
+   36.22
+  ],
+  [
+   "2026-09-16",
+   35.78
+  ],
+  [
+   "2026-09-17",
+   36.36
+  ],
+  [
+   "2026-09-18",
+   35.51
+  ],
+  [
+   "2026-09-21",
+   36.1
+  ],
+  [
+   "2026-09-22",
+   36.1
+  ],
+  [
+   "2026-09-23",
+   36.05
+  ],
+  [
+   "2026-09-24",
+   35.99
+  ],
+  [
+   "2026-09-25",
+   35.75
+  ],
+  [
+   "2026-09-28",
+   36.39
+  ],
+  [
+   "2026-09-29",
+   35.84
+  ],
+  [
+   "2026-09-30",
+   35.4
+  ],
+  [
+   "2026-10-01",
+   35.15
+  ],
+  [
+   "2026-10-02",
+   33.87
+  ],
+  [
+   "2026-10-05",
+   33.96
+  ],
+  [
+   "2026-10-06",
+   34.61
+  ],
+  [
+   "2026-10-07",
+   34.1
+  ]
+ ],
+ "events": [],
+ "notes": "Última earnings: 2026-10-01 (precio -3.6% al día siguiente). Próxima fecha no confirmada.",
+ "reported_scores": {
+  "piotroski": 5,
+  "altman": 4.14
+ }
+}
