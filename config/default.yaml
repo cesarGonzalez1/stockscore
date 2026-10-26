@@ -67,4 +67,7 @@ warnings:
   min_coverage: 0.70
   earnings_soon_days: 14
   cyclical_cap_signal: true          # en sectores cíclicos CANDIDATA baja a VIGILAR
+  cyclical_industries: [semiconductor]   # por industria: solo tope de señal (no se promedian utilidades: castigaría a las que sí crecen)
+  parabolic_return: 1.5              # retorno 12m > +150% => alerta de movimiento parabólico
+  extreme_op_margin: 0.60            # margen operativo > 60% => verifica el dato / pico de ciclo
   cyclical_sectors: [Energy, Basic Materials]   # FCF/EPS TTM dependen del ciclo de materias primas

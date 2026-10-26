@@ -53,6 +53,13 @@ def grade_of(total, cfg):
     return "F"
 
 
+def is_cyclical(snap, cfg):
+    """Cíclica por sector (energía, materiales) o por industria (semiconductores)."""
+    we = cfg["warnings"]
+    ind = (snap.industry or "").lower()
+    return snap.sector in we.get("cyclical_sectors", []) or any(k in ind for k in we.get("cyclical_industries", []))
+
+
 def flags(metrics, cfg, snap=None):
     v, w = [], []
     ve, we = cfg["vetoes"], cfg["warnings"]
@@ -74,9 +81,15 @@ def flags(metrics, cfg, snap=None):
         w.append(f"Ventana de precios corta ({metrics.get('hist_days')} días): vol/swing/pendiente poco fiables")
     if metrics.get("vs_sma200") is not None and metrics["vs_sma200"] < 0 and (metrics.get("mom") or 0) < 0:
         w.append("Tendencia rota: bajo SMA200 y momentum negativo")
+    if (metrics.get("mom") or 0) > we.get("parabolic_return", 1.5):
+        w.append(f"Movimiento parabólico: {metrics['mom']:+.0%} en 12 meses; el momentum extremo suele revertirse")
+    if (metrics.get("op_margin") or 0) > we.get("extreme_op_margin", 0.60):
+        w.append(f"Margen operativo {metrics['op_margin']:.0%}: verifica el dato; si es real, probablemente es pico de ciclo")
     if snap is not None:
         if snap.sector in we.get("cyclical_sectors", []):
             w.append(f"Sector cíclico ({snap.sector}): FCF/EPS TTM dependen del precio de la materia prima; DCF y valor poco fiables")
+        elif is_cyclical(snap, cfg):
+            w.append(f"Industria cíclica ({snap.industry}): múltiplos bajos en el pico del ciclo engañan; señal limitada a VIGILAR")
         if snap.is_financial:
             w.append("Financiera: evaluación parcial (sin EV/FCF/ROIC/Altman); no compares su puntaje con no financieras")
     return v, w
@@ -107,7 +120,7 @@ def score_from_metrics(snap, metrics, notes, cfg, profile="swing", weights=None)
     if vetoes:
         total = min(total, cfg["vetoes"]["veto_cap"])
     return Result(snap.ticker, snap.name, snap.sector, profile, round(total, 2), grade_of(total, cfg), round(cov, 3),
-                  signal_of(total, pillars, vetoes, cov, cfg, snap.sector in cfg["warnings"].get("cyclical_sectors", [])), pillars, metrics, mscores, vetoes, warns, notes,
+                  signal_of(total, pillars, vetoes, cov, cfg, is_cyclical(snap, cfg)), pillars, metrics, mscores, vetoes, warns, notes,
                   snap.as_of.isoformat())
 
 

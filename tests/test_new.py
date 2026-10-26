@@ -255,3 +255,19 @@ def test_diversify_caps_sector():
     d = diversify(df, n=5, max_per_sector=3)
     assert list(d.ticker) == ["A", "B", "C", "F", "G"]
     assert list(d["rank"]) == [1, 2, 3, 4, 5] and list(d.rank_puro)[3] == 6
+
+
+def test_semiconductor_cyclical_and_new_warnings():
+    import copy, json, pathlib, yaml
+    from stockscore.models import Snapshot
+    from stockscore.scoring import is_cyclical, flags
+    cfg = yaml.safe_load(open(pathlib.Path(__file__).parent.parent / "config" / "default.yaml"))
+    d = copy.deepcopy(json.load(open(pathlib.Path(__file__).parent / "fixtures" / "AAPL.json")))
+    d["sector"], d["industry"] = "Technology", "Semiconductors"
+    s = Snapshot(d)
+    assert is_cyclical(s, cfg)
+    d["industry"] = "Consumer Electronics"
+    assert not is_cyclical(Snapshot(d), cfg)
+    _, w = flags({"mom": 4.2, "op_margin": 0.8}, cfg, s)
+    assert any("parabólico" in x for x in w) and any("Margen operativo" in x for x in w)
+    assert any("Industria cíclica" in x for x in w)
