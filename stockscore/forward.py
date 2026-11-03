@@ -4,21 +4,25 @@ from __future__ import annotations
 import datetime as dt
 import pandas as pd
 from .stats import spearman
+from .ranking import sector_neutral as _sector_neutral
 
 HORIZONS = (1, 2, 4, 8, 12)   # semanas
 
 
-def forward_report(store, run_id, price_fn, horizons=HORIZONS, top=10, today=None) -> dict:
+def forward_report(store, run_id, price_fn, horizons=HORIZONS, top=10, today=None, sector_neutral=False) -> dict:
     info = store.run_info(run_id)
     if not info:
         raise ValueError(f"corrida {run_id} no existe")
     rk = store.ranking(run_id)
+    if sector_neutral:
+        rk = _sector_neutral(rk)
     as_of = pd.Timestamp(info["as_of"])
     tickers = list(rk.ticker)
     px = price_fn(tickers + ["SPY"], (as_of - pd.Timedelta(days=7)).date())
     px = px.copy(); px.index = pd.to_datetime(px.index)
     after = px[px.index > as_of]
-    out = {"info": info, "horizons": pd.DataFrame(), "picks": pd.DataFrame(), "status": "ok"}
+    sector_of = rk.set_index("ticker")["sector"]
+    out = {"sector_neutral": sector_neutral, "info": info, "horizons": pd.DataFrame(), "picks": pd.DataFrame(), "status": "ok"}
     if after.empty:
         out["status"] = "Aún no hay cierres posteriores a la corrida: espera al menos un día hábil"
         return out
@@ -37,11 +41,14 @@ def forward_report(store, run_id, price_fn, horizons=HORIZONS, top=10, today=Non
         r_top, r_all = ret.reindex(top_t).dropna(), ret.dropna()
         rest = r_all.drop(labels=[t for t in top_t if t in r_all.index])
         sc = rk.set_index("ticker")["total"]
+        # IC dentro de sector: se quita el promedio de cada sector al puntaje y al retorno (separa selección de apuesta sectorial)
+        a_ = pd.DataFrame({"s": sc.reindex(r_all.index), "r": r_all, "sec": sector_of.reindex(r_all.index)}).dropna()
+        ic_in = spearman(a_["s"] - a_.groupby("sec")["s"].transform("mean"), a_["r"] - a_.groupby("sec")["r"].transform("mean")) if len(a_) else float("nan")
         rows.append(dict(semanas=h, estado="listo", n_top=len(r_top), top_prom=r_top.mean(), resto_prom=rest.mean() if len(rest) else float("nan"),
                          universo=r_all.mean(), spy=spy, top_vs_spy=r_top.mean() - spy,
                          top_vs_resto=r_top.mean() - rest.mean() if len(rest) else float("nan"),
                          pct_top_gana_spy=float((r_top > spy).mean()) if len(r_top) else float("nan"),
-                         ic_spearman=spearman(sc.reindex(r_all.index), r_all)))
+                         ic_spearman=spearman(sc.reindex(r_all.index), r_all), ic_sector=ic_in, n_univ=len(r_all)))
     out["horizons"] = pd.DataFrame(rows)
     last = px.iloc[-1]
     picks = rk.head(top)[["rank", "ticker", "total"]].copy()
@@ -53,7 +60,8 @@ def forward_report(store, run_id, price_fn, horizons=HORIZONS, top=10, today=Non
 
 def format_forward(rep) -> str:
     i = rep["info"]
-    L = [f"FORWARD de corrida #{i['id']} (perfil={i['profile']}, etiqueta='{i['label']}', datos al {i['as_of']})"]
+    sn = " · NEUTRAL POR SECTOR" if rep.get("sector_neutral") else ""
+    L = [f"FORWARD de corrida #{i['id']} (perfil={i['profile']}, etiqueta='{i['label']}', datos al {i['as_of']}){sn}"]
     if rep["status"] != "ok":
         return "\n".join(L + [rep["status"]])
     L.append(f"Entrada: cierre del {rep['entry_date']} · último dato: {rep['last_date']}")
@@ -63,7 +71,9 @@ def format_forward(rep) -> str:
             L.append(f"  {int(r['semanas']):>2} sem: {r['estado']}")
         else:
             L.append(f"  {int(r['semanas']):>2} sem: top {r['top_prom']:+.1%} | resto {r['resto_prom']:+.1%} | SPY {r['spy']:+.1%} | "
-                     f"top−SPY {r['top_vs_spy']:+.1%} | top gana a SPY {r['pct_top_gana_spy']:.0%} | IC {r['ic_spearman']:+.2f} (n={int(r['n_top'])})")
+                     f"top−SPY {r['top_vs_spy']:+.1%} | top gana a SPY {r['pct_top_gana_spy']:.0%}")
+            L.append(f"          IC universo {r['ic_spearman']:+.2f} (n={int(r['n_univ'])}) | IC dentro de sector {r['ic_sector']:+.2f} | top−resto {r['top_vs_resto']:+.1%}")
     L += ["", "Picks (retorno desde la entrada hasta hoy):", rep["picks"].round(3).to_string(index=False), "",
-          "Lectura: IC>0 sostenido en muchas corridas = el puntaje ordena bien. Una sola corrida NO prueba nada."]
+          "Lectura: 'IC universo' usa TODAS las empresas (no solo el top). 'IC dentro de sector' quita la apuesta sectorial:",
+          "si el universo es negativo y el de sector no, el problema es de sector. IC>0 sostenido en muchas corridas = ordena bien. Una corrida NO prueba nada."]
     return "\n".join(L)

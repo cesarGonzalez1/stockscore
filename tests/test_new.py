@@ -271,3 +271,23 @@ def test_semiconductor_cyclical_and_new_warnings():
     _, w = flags({"mom": 4.2, "op_margin": 0.8}, cfg, s)
     assert any("parabólico" in x for x in w) and any("Margen operativo" in x for x in w)
     assert any("Industria cíclica" in x for x in w)
+
+
+def test_sector_neutral_centers_sectors_and_forward_flag(tmp_path):
+    from stockscore.ranking import sector_neutral
+    df = pd.DataFrame({"rank": range(1, 9), "ticker": list("ABCDEFGH"),
+                       "sector": ["E"] * 4 + ["T"] * 4, "total": [90, 88, 86, 84, 70, 68, 66, 64]})
+    sn = sector_neutral(df)
+    # los dos sectores quedan con la misma mediana: ya no domina E
+    med = sn.groupby("sector")["total"].median()
+    assert abs(med["E"] - med["T"]) < 1e-9
+    assert sn.iloc[0]["ticker"] in {"A", "E"}
+    snaps = synthetic_universe(30, seed=2)
+    res = score_universe(snaps, CFG, "swing", SPY)
+    st = Store(str(tmp_path / "s.db")); rid = st.save_run(res, "swing", "h", "t1")
+    FAVORED.clear(); FAVORED.update(r.ticker for r in res[:10])
+    rep = forward_report(st, rid, _fake_prices, top=10, sector_neutral=True)
+    txt = format_forward(rep)
+    assert "NEUTRAL POR SECTOR" in txt and "IC dentro de sector" in txt and "IC universo" in txt
+    h = rep["horizons"].set_index("semanas")
+    assert h.loc[4, "n_univ"] > 20

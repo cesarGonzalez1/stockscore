@@ -51,3 +51,17 @@ def diversify(df: pd.DataFrame, n=10, max_per_sector=3) -> pd.DataFrame:
     out["rank_puro"] = out["rank"]
     out["rank"] = range(1, len(out) + 1)
     return out
+
+
+def sector_neutral(df: pd.DataFrame, min_n=4) -> pd.DataFrame:
+    """Reordena quitando la apuesta de sector: el puntaje de cada empresa se centra en la mediana de su sector.
+    total_sn = total - mediana(sector) + mediana(universo). Sectores con menos de min_n empresas no se tocan.
+    Solo usa datos guardados en la corrida (sin mirar al futuro)."""
+    df = df.copy()
+    gm = df["total"].median()
+    med = df.groupby("sector")["total"].transform("median")
+    cnt = df.groupby("sector")["total"].transform("count")
+    df["total"] = df["total"].where(cnt < min_n, df["total"] - med + gm)
+    df = df.sort_values("total", ascending=False).reset_index(drop=True)
+    df["rank"] = df.index + 1
+    return df

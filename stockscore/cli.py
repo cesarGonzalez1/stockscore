@@ -146,7 +146,7 @@ def cmd_forward(a):
     st = Store(a.db)
     rid = a.run or st.latest_run(profile=a.profile, label=a.label)
     if not rid: sys.exit("No hay corridas guardadas (corre 'score' primero)")
-    print(format_forward(forward_report(st, rid, yahoo_prices, top=a.top)))
+    print(format_forward(forward_report(st, rid, yahoo_prices, top=a.top, sector_neutral=a.sector_neutral)))
 
 
 def cmd_backtest(a):
@@ -249,7 +249,7 @@ def main(argv=None):
     p = sub.add_parser("validate", help="validar contra scores clásicos y estabilidad"); src(p); p.set_defaults(f=cmd_validate)
     p = sub.add_parser("export", help="Excel"); src(p); p.add_argument("--xlsx", default="out/ranking.xlsx"); p.set_defaults(f=cmd_export)
     p = sub.add_parser("forward", help="¿el top-N guardado rindió más que el resto y SPY?"); p.add_argument("--run", type=int); p.add_argument("--profile", default="swing")
-    p.add_argument("--label"); p.add_argument("--top", type=int, default=10); p.set_defaults(f=cmd_forward)
+    p.add_argument("--label"); p.add_argument("--top", type=int, default=10); p.add_argument("--sector-neutral", action="store_true", help="reordena centrando cada sector (quita la apuesta sectorial)"); p.set_defaults(f=cmd_forward)
     p = sub.add_parser("backtest", help="backtest de señales de PRECIO"); src(p); p.add_argument("--horizon", type=int, default=21); p.add_argument("--step", type=int, default=21)
     p.add_argument("--csv"); p.set_defaults(f=cmd_backtest)
     p = sub.add_parser("plan", help="stop, objetivo y tamaño de posición"); p.add_argument("ticker"); p.add_argument("--capital", type=float, required=True)
