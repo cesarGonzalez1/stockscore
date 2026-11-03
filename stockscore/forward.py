@@ -44,7 +44,9 @@ def forward_report(store, run_id, price_fn, horizons=HORIZONS, top=10, today=Non
         # IC dentro de sector: se quita el promedio de cada sector al puntaje y al retorno (separa selección de apuesta sectorial)
         a_ = pd.DataFrame({"s": sc.reindex(r_all.index), "r": r_all, "sec": sector_of.reindex(r_all.index)}).dropna()
         ic_in = spearman(a_["s"] - a_.groupby("sec")["s"].transform("mean"), a_["r"] - a_.groupby("sec")["r"].transform("mean")) if len(a_) else float("nan")
-        rows.append(dict(semanas=h, estado="listo", n_top=len(r_top), top_prom=r_top.mean(), resto_prom=rest.mean() if len(rest) else float("nan"),
+        pil = {p_: spearman(rk.set_index("ticker")[p_].reindex(r_all.index), r_all)
+               for p_ in ("value", "quality", "growth", "trend", "risk", "catalysts") if p_ in rk.columns}
+        rows.append(dict(semanas=h, estado="listo", ic_pilares=pil, n_top=len(r_top), top_prom=r_top.mean(), resto_prom=rest.mean() if len(rest) else float("nan"),
                          universo=r_all.mean(), spy=spy, top_vs_spy=r_top.mean() - spy,
                          top_vs_resto=r_top.mean() - rest.mean() if len(rest) else float("nan"),
                          pct_top_gana_spy=float((r_top > spy).mean()) if len(r_top) else float("nan"),
@@ -72,6 +74,8 @@ def format_forward(rep) -> str:
         else:
             L.append(f"  {int(r['semanas']):>2} sem: top {r['top_prom']:+.1%} | resto {r['resto_prom']:+.1%} | SPY {r['spy']:+.1%} | "
                      f"top−SPY {r['top_vs_spy']:+.1%} | top gana a SPY {r['pct_top_gana_spy']:.0%}")
+            if isinstance(r.get("ic_pilares"), dict) and r["ic_pilares"]:
+                L.append("          IC por pilar: " + " | ".join(f"{k} {v:+.2f}" for k, v in r["ic_pilares"].items()))
             L.append(f"          IC universo {r['ic_spearman']:+.2f} (n={int(r['n_univ'])}) | IC dentro de sector {r['ic_sector']:+.2f} | top−resto {r['top_vs_resto']:+.1%}")
     L += ["", "Picks (retorno desde la entrada hasta hoy):", rep["picks"].round(3).to_string(index=False), "",
           "Lectura: 'IC universo' usa TODAS las empresas (no solo el top). 'IC dentro de sector' quita la apuesta sectorial:",

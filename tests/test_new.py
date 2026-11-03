@@ -291,3 +291,13 @@ def test_sector_neutral_centers_sectors_and_forward_flag(tmp_path):
     assert "NEUTRAL POR SECTOR" in txt and "IC dentro de sector" in txt and "IC universo" in txt
     h = rep["horizons"].set_index("semanas")
     assert h.loc[4, "n_univ"] > 20
+
+
+def test_forward_pillar_ic_line(tmp_path):
+    snaps = synthetic_universe(30, seed=2)
+    res = score_universe(snaps, CFG, "swing", SPY)
+    st = Store(str(tmp_path / "p.db")); rid = st.save_run(res, "swing", "h", "t1")
+    FAVORED.clear(); FAVORED.update(r.ticker for r in res[:10])
+    rep = forward_report(st, rid, _fake_prices, top=10)
+    assert "IC por pilar" in format_forward(rep)
+    assert set(rep["horizons"].set_index("semanas").loc[4, "ic_pilares"]) >= {"value", "trend", "quality"}
